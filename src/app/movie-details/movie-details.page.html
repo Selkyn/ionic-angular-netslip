@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>movie-details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="movie">
+    <ion-card-header>
+      {{ movie.Title }}
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="movie.Poster">
+      <p>Réalisateur: {{ movie.Director }}</p>
+      <p>Année de sortie: {{ movie.Year }}</p>
+      <p>Genre : {{movie.Genre}}</p>
+      <p>Note : {{movie.imdbRating}}</p>
+      <p>Récompenses : {{movie.Awards}}</p>
+      <p>Résumé : {{movie.Plot}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Menu</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item >
+        <ion-label><a href="my-profile">My Profile</a></ion-label>
+      </ion-item>
+      <ion-item >
+        <ion-label><a href="movies">Films</a></ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-content class="ion-padding" id="main-content">
+  <!-- <p>Tap the button in the toolbar to open the menu.</p> -->
+</ion-content>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">myProfile</ion-title>
+      
+    </ion-toolbar>
+    
+  </ion-header>
+  <div>
+    <ion-button type="button" (click)="logout()">Se deconnecter</ion-button>
+
+  </div>
+</ion-content>

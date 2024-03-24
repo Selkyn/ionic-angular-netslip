@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "auth-netslip": {
+      "hosting": {
+        "app": [
+          "auth-netslip"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "auth-netslip"
+  }
+}
