@@ -41,4 +41,8 @@ export const routes: Routes = [
     loadComponent: () => import('./movie-details/movie-details.page').then( m => m.MovieDetailsPage),
     canActivate: [AuthGuard]
   },
+  {
+    path: 'photo',
+    loadComponent: () => import('./photo/photo.page').then( m => m.PhotoPage)
+  },
 ];

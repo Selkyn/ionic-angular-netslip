@@ -1,4 +1,5 @@
 import { enableProdMode, importProvidersFrom } from '@angular/core';
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { RouteReuseStrategy, provideRouter } from '@angular/router';
 import { IonicRouteStrategy, provideIonicAngular } from '@ionic/angular/standalone';
@@ -15,6 +16,7 @@ import { IonicModule } from '@ionic/angular';
 if (environment.production) {
   enableProdMode();
 }
+defineCustomElements(window);
 
 bootstrapApplication(AppComponent, {
   providers: [
